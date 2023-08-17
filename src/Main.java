@@ -20,7 +20,7 @@ public class Main {
 
         System.out.print("Kérlek, add meg a kívánt termékeket: ");
         String input = scanner.nextLine();
-        String[] selectedProducts = input.split(" ");
+        String[] selectedProducts = input.split("");// .split(" ") esetén csak a rendes inputot látja pl. DE hibát dob
         System.out.println("Fizetendő összeg: " + Calculator.calculatePrice(products, selectedProducts) + " Ft");
 
         scanner.close();
